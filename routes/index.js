@@ -33,7 +33,13 @@ router.post('/', async (req, res) => {
 router.get("/", async (req, res) => { 
 const matches = await Match
     .find({})
-    .sort({startTime: 1})
+    .sort({startTime: 1});
+    
+ matches.map(match => {
+      match.updateStatus();
+      match.CalculateDuration();
+      match.save();
+     });   
 
 res.status(200).send(matches);
 });
