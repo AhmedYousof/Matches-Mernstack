@@ -9,7 +9,7 @@ router.post('/', async (req, res) => {
     if (error) {
       return res.status(400).send(error.details[0].message);
     }    
-     match = new Match({
+     let match = new Match({
         homeTeam: req.body.homeTeam,
         awayTeam: req.body.awayTeam,
         startTime: req.body.startTime,
