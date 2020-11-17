@@ -96,28 +96,28 @@ onChange(e) {
 
     <h2>Update the match</h2>
         <form onSubmit={this.onSubmit}>
-            <div class="form-group">
+            <div className="form-group">
                 <input type="text" onChange={this.onChange} class="form-control"  placeholder="Home Team Name...." name="homeTeam" value={this.state.homeTeam} />
             </div>
-            <div class="form-group">
+            <div className="form-group">
                 <input type="text" onChange={this.onChange} class="form-control" id="homeTeamScore" placeholder="Home Team Score...." name="homeTeamScore"  value={this.state.homeTeamScore} />
             </div>
-            <div class="form-group">
+            <div className="form-group">
                 <input type="text" onChange={this.onChange} class="form-control" id="awayTeam" name="awayTeam" placeholder="Away Team Name...." value={this.state.awayTeam} />
             </div>
-            <div class="form-group">
+            <div className="form-group">
                 <input type="text" onChange={this.onChange} class="form-control" id="awayTeamScore" name="awayTeamScore" placeholder="Away Team Score...." value={this.state.awayTeamScore} />
             </div>
-            <div class="form-group col-md-6">
+            <div className="form-group col-md-6">
             <label for="startTime"><h5>Start Time</h5></label>
              <input type="datetime-local" onChange={this.onChange} class="form-control" id="startTime" name="startTime" value={this.state.startTime} />
             </div> 
-            <div class="form-group col-md-6">
+            <div className="form-group col-md-6">
             <label for="endTime"><h5>End Time</h5></label>
 
             <input type="datetime-local" onChange={this.onChange} class="form-control" id="endTime" name="endTime" value={this.state.endTime} />
             </div> 
-            <div class="form-group">
+            <div className="form-group">
                 <input type="text" onChange={this.onChange} class="form-control" id="league" name="league" placeholder="Select the League...." value={this.state.league} />
             </div>
             <input
